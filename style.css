@@ -5,11 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-}
-
 header {
     position: relative;
     display: flex;
@@ -52,16 +47,7 @@ header {
     margin-top: 5px;
 }
 
-/* .menu {
-    display: block;
-    position: relative;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-} */
-
-.menu {
+.nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -72,7 +58,7 @@ header {
     gap: 20px;
 }
 
-.menu i.fa-solid.fa-cart-shopping {
+.nav i.fa-solid.fa-cart-shopping {
 
     font-size: 25px;
     align-items: center;
@@ -88,7 +74,7 @@ header {
     padding-top: 7px;
 }
 
-.menu .pesquisa {
+.nav .pesquisa {
     position: relative;
     margin: auto;
     display: flex;
@@ -101,14 +87,14 @@ header {
     width: 200px;
 }
 
-.menu .pesquisa i {
+.nav .pesquisa i {
     position: absolute;
     right: 10px;
     color: gray;
     cursor: pointer;
 }
 
-.menu ul {
+.nav ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -119,24 +105,24 @@ header {
     margin-top: 10px;
 }
 
-.menu li:hover {
+.nav li:hover {
     cursor: pointer;
     text-decoration: underline;
     font-weight: 600;
 }
 
-.menu ul li {
+.nav ul li {
     color: white;
     list-style-type: none;
     flex-wrap: nowrap;
 }
 
-.menu li a {
+.nav li a {
     color: white;
     text-decoration: none;
 }
 
-.menu .login {
+.nav .login {
     position: relative;
     display: block;
     margin: auto;
@@ -151,12 +137,17 @@ header {
 
 }
 
-.menu button:hover {
+.nav button:hover {
     background-color: #b5e4ff;
     border: 1px solid #0681c9;
 }
 
-.banner {
+main {
+    display: flex;
+min-height: 100vh; /* vh = altura da janela */
+}
+
+.coluna .imagens {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -164,21 +155,15 @@ header {
     align-items: center;
     text-align: center;
     margin: auto;
-    height: 400px;
-    width: 100%;
     gap: 10px;
-    overflow: hidden;
-}
-
-.banner img {
-
     height: 250px;
-    width: 300px;
+    width: 100%;
+    max-width: 300px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
 }
 
-.banner img:hover {
+.coluna img:hover {
 
     box-shadow: 10px 10px 20px rgba(2, 149, 247, 0.5);
     border: 2px solid #3b8cbe;
@@ -192,7 +177,7 @@ header {
     flex-direction: row;
     gap: 10px;
     margin: auto;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     width: 100%;
 
 }
@@ -244,8 +229,8 @@ fieldset {
     justify-content: center;
     align-items: center;
     flex-grow: 1;
-    /* gap: 61px; */
-    max-width: 350px;
+    gap: 30px;
+    max-width: 400px;
     border: none;
     border-radius: 20px;
     width: 25%;
@@ -455,25 +440,25 @@ div.gallery-item div.desc {
         gap: 20px;
     }
 
-    .menu {
+    .nav {
         flex-direction: column;
     }
 
-    .menu ul {
+    .nav ul {
         gap: 10px;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .banner img {
+    /* .coluna .imagens{
 
         height: 30%;
     }
 
-    .banner a img {
+    .coluna a img {
 
         height: 25%;
-    }
+    } */
 
     .coluna {
         width: 80%;
@@ -506,13 +491,7 @@ div.gallery-item div.desc {
         align-items: center;
     }
 
-    .banner {
-        position: relative;
-        display: none;
-        flex-direction: row;
-    }
-
-    .menu ul {
+    .nav ul {
         gap: 10px;
         flex-direction: column;
         flex-wrap: wrap;
