@@ -148,6 +148,24 @@ div .login {
 
 }
 
+div .avatar i {
+    color: white;
+    font-size: 36px;
+}
+
+div .logintext, div .logintext a {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+div .logintext a:hover {
+    color: #a9f9ff;
+}
+
 div button:hover {
     background-color: #b5e4ff;
     border: 1px solid #0681c9;
@@ -159,6 +177,7 @@ flex-wrap: nowrap;
 flex-direction: column;
 
 } */
+
 
 main {
     background-color: #353535;
@@ -210,81 +229,88 @@ main {
 
 /* Container do Catálogo usando Grid */
 .catalogo {
-  display: grid;
-  /* MÁGICA DO GRID: Cria colunas automáticas de no mínimo 250px. Se a tela crescer, ele encaixa mais colunas! */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  width: 100%;
-  max-width: 1200px; /* Não deixa a loja esticar infinitamente em monitores ultrawide */
-  margin: 0 auto;
-  padding: 20px;
+    display: grid;
+    /* MÁGICA DO GRID: Cria colunas automáticas de no mínimo 250px. Se a tela crescer, ele encaixa mais colunas! */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    /* Não deixa a loja esticar infinitamente em monitores ultrawide */
+    margin: 0 auto;
+    padding: 20px;
 }
 
 /* O Card do Produto */
 .card-produto {
-  background-color: #ffffff; /* Fundo branco destaca o produto */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  border-radius: 8px; /* Borda menos arredondada dá um ar mais sério */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais sutil */
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+    background-color: #ffffff;
+    /* Fundo branco destaca o produto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    /* Borda menos arredondada dá um ar mais sério */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra mais sutil */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
 }
 
 .card-produto:hover {
-  transform: translateY(-5px); /* Faz o card "flutuar" quando passa o mouse */
-  box-shadow: 0 8px 16px rgba(0, 83, 115, 0.2);
+    transform: translateY(-5px);
+    /* Faz o card "flutuar" quando passa o mouse */
+    box-shadow: 0 8px 16px rgba(0, 83, 115, 0.2);
 }
 
 .card-produto .imagens {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  margin-bottom: 15px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
 }
 
 /* Tipografia do Card */
 .nome-produto {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 15px;
-  font-weight: normal;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: normal;
 }
 
 .preco-antigo {
-  font-size: 14px;
-  color: #888;
-  text-decoration: line-through; /* Corta o preço antigo */
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+    /* Corta o preço antigo */
 }
 
 .preco-novo {
-  font-size: 24px;
-  color: #008cff; /* cor preço novo */
-  font-weight: bold;
-  margin-bottom: 15px;
+    font-size: 24px;
+    color: #008cff;
+    /* cor preço novo */
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 /* Botão de comprar atualizado */
 .btn-comprar {
-  background-color: #3b8cbe;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 12px;
-  font-weight: bold;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  transition: background-color 0.2s;
+    background-color: #3b8cbe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
 }
 
 .btn-comprar:hover {
-  background-color: #29adff;
+    background-color: #29adff;
 }
 
 
@@ -337,7 +363,8 @@ fieldset {
     background-color: lightgrey;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    /* Alinha os itens no topo da coluna */
     align-items: center;
     flex-grow: 1;
     gap: 30px;
@@ -367,7 +394,9 @@ fieldset {
 
 .coluna button {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     background-color: #3b8cbe;
     border: none;
@@ -383,6 +412,14 @@ fieldset {
 
 .coluna a {
     text-decoration: none;
+}
+
+.coluna>a:last-child {
+    margin-top: auto;
+    /* ISSO FAZ A MÁGICA: empurra o botão lá pro fundo! */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .coluna button:hover {
@@ -602,7 +639,8 @@ li {
 .text {
 
     color: #f2f2f2;
-    font-size: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
     padding: 8px 12px;
     position: absolute;
     bottom: 8px;
@@ -700,7 +738,7 @@ li {
         justify-content: space-evenly;
     }
 
-    .coluna button {}
+    /* .coluna button {} */
 
     .coluna p {
 
