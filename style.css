@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     /* background-color: black; */
+    /* outline: 1px solid red; ADICIONE ESTA LINHA */
 }
 
 header {
@@ -12,19 +13,36 @@ header {
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    padding: 0 40px;
     background-color: #005373;
     height: 100px;
-    width: 100%;
+    width: auto;
+    gap: 10px;
+
+
 }
 
-header div {
+header .nav-login {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    gap: 10px;
     height: 100px;
-    width: 100%;
+    width: auto;
+}
+
+header .nav-pesquisa {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+    height: 100px;
+    width: stretch;
+    max-width: 500px;
 }
 
 .logo-img img {
@@ -66,7 +84,10 @@ header div {
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 20px;
+
+
 }
 
 div i.fa-solid.fa-cart-shopping {
@@ -108,12 +129,12 @@ div .pesquisa i {
 .nav ul {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 10px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+    margin: auto;
 }
 
 .nav li:hover {
@@ -135,7 +156,9 @@ div .pesquisa i {
 
 div .login {
     position: relative;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
     background-color: #ececec;
     border: none;
@@ -153,13 +176,15 @@ div .avatar i {
     font-size: 36px;
 }
 
-div .logintext, div .logintext a {
+div .logintext,
+div .logintext a {
     color: rgb(255, 255, 255);
     font-size: 14px;
     justify-content: center;
     align-items: center;
     text-decoration: underline;
     font-weight: bold;
+    text-align: center;
 }
 
 div .logintext a:hover {
@@ -167,7 +192,7 @@ div .logintext a:hover {
 }
 
 div button:hover {
-    background-color: #b5e4ff;
+    background-color: #93DFF8;
     border: 1px solid #0681c9;
 }
 
@@ -195,10 +220,10 @@ main {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: center;
-    margin: 0;
+    margin: auto;
     gap: 10px;
     height: 250px;
     width: 100%;
@@ -367,6 +392,7 @@ fieldset {
     /* Alinha os itens no topo da coluna */
     align-items: center;
     flex-grow: 1;
+    display: grid;
     gap: 30px;
     max-width: 400px;
     border: none;
@@ -424,8 +450,10 @@ fieldset {
 
 .coluna button:hover {
     box-shadow: 10px 10px 20px rgba(2, 149, 247, 0.5);
-    border: 1px solid #b5e4ff;
+    border: 1px solid #93DFF8;
+    background-color: #005373;
     cursor: pointer;
+    text-decoration: underline;
     font-size: 14px;
 }
 
@@ -443,7 +471,7 @@ footer {
     margin: auto;
     background-color: #005373;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 .logo-rodape img {
@@ -693,6 +721,30 @@ li {
     }
 }
 
+@media (max-width: 1280px) {
+
+    .nav ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    div .pesquisa {
+        width: stretch;
+        max-width: 400px;
+        gap: 10px;
+        margin: auto;
+    }
+
+    header .nav-pesquisa {
+
+        display: flex;
+    }
+
+    nav {}
+
+
+}
+
 @media (max-width: 768px) {
 
     * {
@@ -701,14 +753,20 @@ li {
     }
 
     header {
-        flex-direction: row;
+        justify-content: flex-end;
+        flex-direction: column;
         height: auto;
         padding: 20px;
         gap: 20px;
     }
 
     header div {
-        flex-direction: column;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    div .pesquisa {
+        width: fit-content;
     }
 
     .nav {
@@ -731,9 +789,15 @@ li {
         height: 25%;
     } */
 
+    .conteudo {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     .coluna {
-        width: 80%;
-        margin: 20px 0;
+        width: auto;
+        margin: auto;
         padding: 10px;
         justify-content: space-evenly;
     }
@@ -756,10 +820,21 @@ li {
         flex-direction: column;
     }
 
+    header div {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: auto;
+    }
+
     .conteudo {
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
+        gap: 40px;
     }
 
     .nav ul {
