@@ -471,7 +471,8 @@ footer {
     margin: auto;
     background-color: #005373;
     height: auto;
-    width: auto;
+    width: 100%;
+    bottom: 0;
 }
 
 .logo-rodape img {

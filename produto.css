@@ -1,0 +1,39 @@
+
+main.vitrine {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+div.imagem-produto {
+
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+}
+
+img.imagens {
+
+    width: 500px;
+    height: 500px;
+}
+
+div.descricao-produto {
+   background-color: rgb(255, 0, 0);
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.descricao-compra {
+
+}
+
+div.atendimento {
+    background-color: aqua;
+
+}
