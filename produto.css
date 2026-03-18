@@ -121,16 +121,24 @@ div.frete {
 }
 
 .detalhes-produto p {
-padding: 50px 200px;
+    padding: 50px 200px;
 }
 
-div.atendimento {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+div.contato {
+
+    position: relative;
+    background-color: lightgray;
+    display: inline-block;
     justify-content: center;
-    bottom: 0;
-    background-color: aqua;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
     width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
 
 }
+
