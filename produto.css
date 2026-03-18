@@ -8,7 +8,7 @@ div.vitrine {
 
     display: grid;
     /* Divide em duas colunas: a primeira ocupa 60% e a segunda 40% */
-    grid-template-columns: 6fr 4fr 6fr;
+    grid-template-columns: 6fr 7fr 7fr;
     gap: 40px;
     padding: 0 40px;
     max-width: fit-content;
@@ -83,6 +83,7 @@ button {
 }
 
 .input-cep {
+    border: 0;
     border-radius: 5px;
     align-items: center;
     text-align: center;
@@ -97,7 +98,7 @@ p.preco {
 }
 
 div.frete {
-    outline: 2px solid rgba(0, 0, 0, 0.050);
+
     background-color: lightgray;
     display: flex;
     flex-direction: row;
@@ -110,13 +111,26 @@ div.frete {
 }
 
 .detalhes-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     background-color: white;
+    font-size: 16px;
 
 }
 
+.detalhes-produto p {
+padding: 50px 200px;
+}
+
 div.atendimento {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     bottom: 0;
     background-color: aqua;
+    width: 100%;
 
 }
