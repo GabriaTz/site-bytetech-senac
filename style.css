@@ -347,7 +347,7 @@ main {
     align-items: center;
     text-align: center;
     border: none;
-    border-radius: 20px;
+    border-radius: 0px;
     width: 80%;
     height: auto;
     margin: auto;
