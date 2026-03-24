@@ -1,0 +1,41 @@
+.servicos {
+    position: relative;
+    background-color: lightgray;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.servicos i {
+
+    font-size: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #3b8cbe;
+}
+
+.servicos li {
+    list-style-type: none;
+    color: rgb(34, 34, 34);
+}
+
+.servicos h2 {
+    color: #ececec;
+    background-color: #3b8cbe;
+}
+
+fieldset {
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    min-width: 30px;
+}
