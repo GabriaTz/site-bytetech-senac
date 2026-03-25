@@ -484,7 +484,7 @@ p {
 
 }
 
-li {
+ .Lista-Descricao li  {
     list-style-type: none;
     color: rgb(255, 255, 255);
 }
