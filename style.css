@@ -22,6 +22,50 @@ header {
 
 }
 
+/* Botão hamburguer — escondido no desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+}
+ 
+.hamburger span {
+    display: block;
+    width: 24px;
+    height: 2.5px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+ 
+/* Animação X quando aberto */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(7.5px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-7.5px) rotate(-45deg);
+}
+ 
+/* Menu mobile — escondido por padrão */
+.mobile-menu {
+    display: none;
+}
+ 
+
 header .nav-login {
     position: relative;
     display: flex;
@@ -599,16 +643,6 @@ li {
         flex-wrap: wrap;
     }
 
-    /* .coluna .imagens{
-
-        height: 30%;
-    }
-
-    .coluna a img {
-
-        height: 25%;
-    } */
-
     .conteudo {
         flex-direction: column;
         justify-content: center;
@@ -622,8 +656,6 @@ li {
         justify-content: space-evenly;
     }
 
-    /* .coluna button {} */
-
     .coluna p {
 
         text-align: center;
@@ -631,6 +663,98 @@ li {
         font-size: 16px;
         padding: 0;
     }
+
+    /* claude */
+
+/* Esconde pesquisa e nav originais no mobile */
+    .desktop-only {
+        display: none !important;
+    }
+ 
+    /* Mostra o botão hamburguer */
+    .hamburger {
+        display: flex;
+    }
+ 
+    header {
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: auto;
+        padding: 15px 20px;
+        gap: 10px;
+        align-items: center;
+    }
+ 
+    .logo-img {
+        flex: 1;
+    }
+ 
+    .nav-login {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        height: auto;
+        margin: 0;
+    }
+ 
+    /* Menu mobile aberto — ocupa toda a largura abaixo do header */
+    .mobile-menu.open {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        background-color: #004260;
+        padding: 20px;
+        border-top: 1px solid rgba(255,255,255,0.15);
+        animation: slideDown 0.3s ease;
+    }
+ 
+    @keyframes slideDown {
+        from { opacity: 0; transform: translateY(-10px); }
+        to   { opacity: 1; transform: translateY(0); }
+    }
+ 
+    /* Pesquisa dentro do menu mobile */
+    .mobile-menu .nav-pesquisa {
+        display: flex;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        max-width: 100%;
+    }
+ 
+    .mobile-menu .pesquisa {
+        width: 100%;
+        max-width: 100%;
+    }
+ 
+    /* Nav dentro do menu mobile */
+    .mobile-menu .nav {
+        width: 100%;
+    }
+ 
+    .mobile-menu .nav ul {
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+ 
+    .mobile-menu .nav ul li a {
+        display: block;
+        padding: 10px 15px;
+        background-color: rgba(255,255,255,0.07);
+        border-radius: 8px;
+        transition: background 0.2s;
+    }
+ 
+    .mobile-menu .nav ul li a:hover {
+        background-color: rgba(255,255,255,0.18);
+        text-decoration: none;
+    }
+
+/* fimclaude */
+
 
 }
 

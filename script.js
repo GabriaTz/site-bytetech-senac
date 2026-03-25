@@ -49,3 +49,12 @@
         showSlides(slideIndex);
       }, 3000); // 2000 milissegundos = 2 segundos. Se achar muito rápido, mude para 3000 ou 4000.
     }
+
+    // Hamburguer menu toggle
+const hamburgerBtn = document.getElementById('hamburgerBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+ 
+hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+});

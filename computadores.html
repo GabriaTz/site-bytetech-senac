@@ -13,30 +13,32 @@
 
 <body>
 
-   <header>
-    <div class="logo-img"><a href="index.html"><img src="Bytech_logo.svg" alt="logo"></a></div>
-
-    <!-- <div class="titulo">Bytech<br>
-      <p>cada byte importa</p>
-    </div> -->
-
-    <div class="nav-login">
-      <section class="avatar"><i class="fa-regular fa-circle-user"></i></section>
-      <section class="logintext">Olá, <a href="">Entre</a> <br> ou <a href=""> Cadastre-se</a></section>
-      
-      <button class="login">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
-      <button class="login"><i class="fa-solid fa-cart-shopping"></i></button>
-    </div>
-
+<header>
+  <div class="logo-img"><a href="index.html"><img src="Bytech_logo.svg" alt="logo"></a></div>
+ 
+  <!-- Botões sempre visíveis -->
+  <div class="nav-login">
+    <section class="avatar"><i class="fa-regular fa-circle-user"></i></section>
+    <section class="logintext">Olá, <a href="">Entre</a> <br> ou <a href=""> Cadastre-se</a></section>
+    <button class="login">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+    <button class="login"><i class="fa-solid fa-cart-shopping"></i></button>
+ 
+    <!-- Botão hamburguer (visível apenas em mobile) -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+ 
+  <!-- Menu mobile (pesquisa + nav ficam aqui no mobile) -->
+  <div class="mobile-menu" id="mobileMenu">
     <div class="nav-pesquisa">
       <section class="pesquisa">
         <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
       </section>
     </div>
-
-
     <div class="nav">
-
       <ul>
         <li><a href="computadores.html"> Computadores </a></li>
         <li><a href="videogames.html"> Videogames </a></li>
@@ -44,8 +46,24 @@
         <li><a href="servicos.html"> Serviços </a></li>
       </ul>
     </div>
-
-  </header>
+  </div>
+ 
+  <!-- Pesquisa e nav normais (visíveis apenas acima de 768px) -->
+  <div class="nav-pesquisa desktop-only">
+    <section class="pesquisa">
+      <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
+    </section>
+  </div>
+  <div class="nav desktop-only">
+    <ul>
+      <li><a href="computadores.html"> Computadores </a></li>
+      <li><a href="videogames.html"> Videogames </a></li>
+      <li><a href="contato.html"> Contato </a></li>
+      <li><a href="servicos.html"> Serviços </a></li>
+    </ul>
+  </div>
+ 
+</header>
   
   <main>
 
@@ -182,54 +200,7 @@
     </div>
   </main>
 
-  <script>
-    let slideIndex = 1;
-    let timer; // Variável para guardar o nosso cronômetro
-
-    // Inicia o carrossel assim que a página carrega
-    showSlides(slideIndex);
-    iniciarCarrossel();
-
-    // Controles de próximo/anterior (quando você clica nas setas)
-    function plusSlides(n) {
-      clearInterval(timer); // Pausa o timer automático
-      showSlides(slideIndex += n);
-      iniciarCarrossel(); // Recomeça o timer do zero
-    }
-
-    // Controles das bolinhas (quando você clica nos dots, se for usar)
-    function currentSlide(n) {
-      clearInterval(timer);
-      showSlides(slideIndex = n);
-      iniciarCarrossel();
-    }
-
-    // Função principal que exibe a imagem correta (igual a sua original)
-    function showSlides(n) {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-
-      if (n > slides.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = slides.length }
-
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-
-      slides[slideIndex - 1].style.display = "block";
-      if (dots.length > 0) { // Pequena proteção caso você tenha removido as bolinhas do HTML
-        dots[slideIndex - 1].className += " active";
-      }
-    }
-
-    
-    
-  </script>
-
+   <script src="/script.js"></script>
 </body>
 
 <footer>
