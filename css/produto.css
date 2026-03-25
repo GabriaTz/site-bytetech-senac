@@ -138,6 +138,13 @@ div.contato {
 
 }
 
+.contato i {
+    font-size: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #3b8cbe;
+}
+
 .Lista-Descricao {
     color: rgb(46, 46, 46);
     text-align: center;
