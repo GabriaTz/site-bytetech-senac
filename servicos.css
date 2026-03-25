@@ -1,4 +1,3 @@
-
 .contato {
     position: relative;
     background-color: lightgray;
@@ -100,6 +99,58 @@ fieldset {
     transform: scale(0.95);
 }
 
+div.gallery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item button {
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    background-color: #3b8cbe;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+.gallery-item button:hover {
+    background-color: #1b5280;
+    border: 1px solid #b5e4ff;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+div.gallery-item {
+    margin: 5px;
+    border: 1px solid #ccc;
+    width: 40%;
+    min-width: 220px;
+}
+
+div.gallery-item:hover {
+    border: 1px solid #777;
+}
+
+div.gallery-item img {
+    width: 100%;
+    height: 300px;
+}
+
+div.gallery-item div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
 .quem-somos {
     position: relative;
     background-color: lightgray;
@@ -199,4 +250,49 @@ h3, p {
 .stars {
     color: gold;
     font-size: 18px;
+}
+
+@media (max-width: 1200px) {
+
+    .contato {
+        width: 100%;
+    }
+
+    div.gallery {
+        flex-direction: row;
+    }
+
+    div.gallery-item {
+
+    width: 80%;
+
+}
+
+}
+
+@media (max-width: 768px) {
+
+    .contato {
+        width: 100%;
+    }
+
+    div.gallery {
+        flex-direction: column;
+    }
+
+    div.gallery-item {
+
+    width: 80%;
+
+}
+
+@media (max-width: 768px) {
+
+        div.gallery-item {
+
+    width: 100%;
+
+}
+
+}
 }
