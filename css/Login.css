@@ -1,24 +1,28 @@
 div.Login h1 {
-align-items: center;
-text-align: center;
+    align-items: center;
+    text-align: center;
+    background-color: #3B8CBE;
+    color: white;
+    width: 100%;
 }
 
-div.Login{
+div.Login {
+    align-items: center;
     display: flex;
     flex-direction: column;
     background-color: white;
     font-size: 1rem;
-    padding: 50px;
-    border:  1px solid #3b8cbe;
+    /* padding: 50px; */
+    border: 1px solid #3b8cbe;
     width: 50%;
 }
 
 div.Login label {
-font-weight: bold;
+    font-weight: bold;
 }
 
 div.Login input {
-   
+
     height: 2rem;
     width: 100%;
     padding: 0.6rem;
@@ -32,11 +36,12 @@ div.Login input {
 
 div.Login input:focus {
 
-      border: 3px solid #96E4FD;
+    border: 3px solid #96E4FD;
 
 }
 
-div.Login button.btnAcessar {
+div.Login button.btnAcessar,
+div.Nova-Conta button {
 
     position: relative;
     display: flex;
@@ -64,8 +69,13 @@ div.Login button.btnAcessar:hover {
     border: 1px solid #0681c9;
 }
 
+div.Nova-Conta button:hover {
+    background-color: #005373;
+    border: 1px solid #0681c9;
+}
+
 div.Login .esqSenha {
-        font-size: 14px;
+    font-size: 14px;
     text-decoration: underline;
 }
 
@@ -80,6 +90,20 @@ div.Nova-Conta {
     background-color: white;
     font-size: 1rem;
     padding: 50px;
-    border:  1px solid #3b8cbe;
+    border: 1px solid #3b8cbe;
     width: 50%;
+}
+
+div.Nova-Conta h2 {
+ align-items: center;
+    text-align: center;
+    background-color: #3B8CBE;
+    color: white;
+    width: 100%;
+}
+
+div.Nova-Conta p {
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
 }
