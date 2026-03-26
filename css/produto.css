@@ -160,10 +160,11 @@ div.contato {
 
     div.vitrine {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-items: center;
         align-items: center;
+        margin: 40px auto;
     }
 
 
@@ -175,8 +176,22 @@ div.contato {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding: 20px;
+        margin: 40px auto;
     }
+
+    /* div.imagen-produto {
+        width: 100%;
+        height: auto;
+    } */
+
+        img.imagens {
+        width: 100%;
+        height: auto;
+    }
+
+    .detalhes-produto p {
+    padding: 0 0;
+}
 
     /* .vitrine {
         display: flex;
@@ -193,4 +208,30 @@ div.contato {
         padding: 20px;
     } */
     
+}
+
+
+@media (max-width: 900px) {
+
+.detalhes-produto {
+    padding: 50px;
+    gap: 20px;
+}
+
+.detalhes-produto h2 {
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+div.frete {
+    flex-direction: column;
+}
+
 }

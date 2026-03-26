@@ -334,7 +334,7 @@ main {
     padding: 15%;
 }
 
-.coluna button {
+.coluna button, .btn-feedback {
     position: relative;
     display: flex;
     justify-content: center;
@@ -477,7 +477,7 @@ p {
     text-align: center;
     font-size: large;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
