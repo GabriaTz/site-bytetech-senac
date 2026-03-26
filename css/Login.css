@@ -1,0 +1,85 @@
+div.Login h1 {
+align-items: center;
+text-align: center;
+}
+
+div.Login{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 1rem;
+    padding: 50px;
+    border:  1px solid #3b8cbe;
+    width: 50%;
+}
+
+div.Login label {
+font-weight: bold;
+}
+
+div.Login input {
+   
+    height: 2rem;
+    width: 100%;
+    padding: 0.6rem;
+    border: 2px solid #3b8cbe;
+    outline: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+div.Login input:focus {
+
+      border: 3px solid #96E4FD;
+
+}
+
+div.Login button.btnAcessar {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #3b8cbe;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: fit-content;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    min-height: 40px;
+    text-transform: uppercase;
+    padding: 10px;
+
+}
+
+div.Login button.btnAcessar:hover {
+    background-color: #005373;
+    border: 1px solid #0681c9;
+}
+
+div.Login .esqSenha {
+        font-size: 14px;
+    text-decoration: underline;
+}
+
+div.Login .esqSenha:hover {
+    color: #3b8cbe;
+    cursor: pointer;
+}
+
+div.Nova-Conta {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-size: 1rem;
+    padding: 50px;
+    border:  1px solid #3b8cbe;
+    width: 50%;
+}

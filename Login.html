@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bytech</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/Login.css">
+  <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
+  <script src="https://kit.fontawesome.com/54ad1fd42c.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+ <header>
+  <div class="logo-img"><a href="index.html"><img src="Imagens/logo/bytech_logo.svg" alt="logo"></a></div>
+ 
+  <!-- Botões sempre visíveis -->
+  <div class="nav-login">
+    <section class="avatar"><i class="fa-regular fa-circle-user"></i></section>
+    <section class="logintext">Olá, <a href="">Entre</a> <br> ou <a href=""> Cadastre-se</a></section>
+    <button class="login">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button>
+    <button class="login"><i class="fa-solid fa-cart-shopping"></i></button>
+ 
+    <!-- Botão hamburguer (visível apenas em mobile) -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+ 
+  <!-- Menu mobile (pesquisa + nav ficam aqui no mobile) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="nav-pesquisa">
+      <section class="pesquisa">
+        <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
+      </section>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="computadores.html"> Computadores </a></li>
+        <li><a href="videogames.html"> Videogames </a></li>
+        <li><a href="contato.html"> Contato </a></li>
+        <li><a href="servicos.html"> Serviços </a></li>
+      </ul>
+    </div>
+  </div>
+ 
+  <!-- Pesquisa e nav normais (visíveis apenas acima de 768px) -->
+  <div class="nav-pesquisa desktop-only">
+    <section class="pesquisa">
+      <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
+    </section>
+  </div>
+  <div class="nav desktop-only">
+    <ul>
+      <li><a href="computadores.html"> Computadores </a></li>
+      <li><a href="videogames.html"> Videogames </a></li>
+      <li><a href="contato.html"> Contato </a></li>
+      <li><a href="servicos.html"> Serviços </a></li>
+    </ul>
+  </div>
+ 
+</header>
+
+  <main>
+
+    <div class="Login">
+        <h1>Acesse sua conta</h1>
+        <p>informe seus dados para continuar</p><br>
+
+         <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Insira seu E-mail"><br>
+
+        <label for="email">Senha:</label>
+        <input type="password" id="password" name="password" placeholder="Insira sua Senha"><br>
+
+       <button class="btnAcessar">Acessar Conta</button><br>
+
+       <p class="esqSenha">Esqueceu sua senha?</p>
+
+    </div>
+
+        <div class="Nova-Conta">
+        <h1>Acesse sua conta</h1>
+        <p>informe seus dados para continuar</p><br>
+
+       <button class="btnAcessar">Acessar Conta</button><br>
+
+       <p class="esqSenha">Esqueceu sua senha?</p>
+
+    </div>
+
+  
+  </main>
+    <script src="/js/script.js"></script>
+</body>
+
+<footer>
+  <div class="rodape">
+    <div class="logo-rodape">
+      <div class="logo-img"><a href="/index.html"><img src="/Imagens/logo/bytech_logo.svg" alt="logo"></a></div>
+    </div>
+    <div class="texto-rodape">
+      <ul>
+        <li><a href="/quem-somos.html">Quem somos</a></li>
+        <li><a href="/servicos.html">Serviços</a></li>
+        <li><a href="#">Orçamentos</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="#">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</html>
