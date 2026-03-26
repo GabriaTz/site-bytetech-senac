@@ -156,3 +156,41 @@ div.contato {
     align-items: center;
 }
 
+@media (max-width: 1250px) {
+
+    div.vitrine {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+
+    div.vitrine {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    /* .vitrine {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .descricao-produto {
+        font-size: 1rem;
+    }
+
+    .detalhes-produto p {
+        padding: 20px;
+    } */
+    
+}
