@@ -10,7 +10,7 @@ div.Login {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #D3D3D3;
     font-size: 1rem;
     /* padding: 50px; */
     border: 1px solid #3b8cbe;
@@ -28,7 +28,6 @@ div.Login input {
     border: 2px solid #3b8cbe;
     outline: none;
     border-radius: 5px;
-    background-color: transparent;
     cursor: pointer;
 }
 
@@ -86,7 +85,7 @@ div.Login .esqSenha:hover {
 div.Nova-Conta {
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: #D3D3D3;
     font-size: 1rem;
     /* padding: 50px; */
     border: 1px solid #3b8cbe;
