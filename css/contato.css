@@ -9,7 +9,6 @@
     /* align-items: center; */
     text-align: center;
     font-size: 1rem;
-    border: none;
     border-radius: 0px;
     width: 80%;
     height: auto;
@@ -35,6 +34,8 @@
 }
 
 fieldset {
+    align-items: center;
+    justify-content: center;
     border-radius: 5px;
     padding: 1rem;
     display: flex;
@@ -42,12 +43,24 @@ fieldset {
     min-width: 30px;
 }
 
+fieldset textarea {
+    border: 1px solid #3b8cbe;
+    width: 50%;
+    height: 200px;
+}
+
+fieldset textarea:focus {
+
+    border: 3px solid #96E4FD;
+}
+
 .contatoArea {
     flex-direction: row;
 }
 
+
 .contatoArea a {
-display: inline-flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     color: #3b8cbe;
@@ -59,7 +72,29 @@ display: inline-flex;
     align-items: center;
 }
 
-@media (max-width:600px) {  
+div.contato label {
+    font-weight: bold;
+}
+
+div.contato input {
+
+    height: 2rem;
+    width: 50%;
+    padding: 0.6rem;
+    border: 2px solid #3b8cbe;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+div.contato input:focus {
+
+    border: 3px solid #96E4FD;
+
+}
+
+@media (max-width:600px) {
     .contato {
         width: auto;
         height: auto;
