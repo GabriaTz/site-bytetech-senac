@@ -1,17 +1,19 @@
 .contato {
     position: relative;
     background-color: lightgray;
-    display: inline-block;
+    border: 1px solid #3b8cbe;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     text-align: center;
+    font-size: 1rem;
     border: none;
     border-radius: 0px;
     width: 80%;
     height: auto;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    margin: 0;
 }
 
 .contato i {
@@ -38,4 +40,21 @@ fieldset {
     display: flex;
     flex-direction: column;
     min-width: 30px;
+}
+
+.contatoArea {
+    flex-direction: row;
+}
+
+.contatoArea a {
+display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #3b8cbe;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }

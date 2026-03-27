@@ -156,6 +156,24 @@ div.contato {
     align-items: center;
 }
 
+.contatoArea {
+    flex-direction: row;
+}
+
+.contatoArea a {
+display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #3b8cbe;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
 @media (max-width: 1250px) {
 
     div.vitrine {
