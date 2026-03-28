@@ -1,16 +1,10 @@
-em progresso:
+em progresso...
 
 lista de a fazeres:
 
-fazer pagina quem somos.
+-carrosel nos cards dos produtos na vitrine(ou nao ?)
 
-responsivo na pagina de produtos
+-miniaturas das imagens dos produtos
 
-carrosel nos cards dos produtos
-
-miniaturas das imagens dos produtos
-
-pagina de login
-
-pagina de compra e carrinho
+-pagina de compra e carrinho
 
