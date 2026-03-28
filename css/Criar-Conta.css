@@ -1,4 +1,4 @@
-div.Login h1 {
+div.Criar-Conta h1 {
     align-items: center;
     text-align: center;
     background-color: #3B8CBE;
@@ -6,7 +6,7 @@ div.Login h1 {
     width: 100%;
 }
 
-div.Login {
+div.Criar-Conta {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -14,14 +14,37 @@ div.Login {
     font-size: 1rem;
     /* padding: 50px; */
     border: 1px solid #3b8cbe;
-    width: 50%;
+    width: 70%;
 }
 
-div.Login label {
+div.Criar-Conta fieldset {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    padding: 50px 0;
+}
+
+div.Criar-Conta form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+}
+
+
+
+div.Criar-Conta label {
     font-weight: bold;
 }
 
-div.Login input {
+div.Criar-Conta input {
     height: 2rem;
     width: 50%;
     padding: 0.6rem;
@@ -32,13 +55,13 @@ div.Login input {
 }
 
 
-div.Login input:focus {
+div.Criar-Conta input:focus {
 
     border: 3px solid #96E4FD;
 
 }
 
-div.Login button.btnAcessar,
+fieldset .btnAcessar,
 div.Nova-Conta button {
 
     position: relative;
@@ -62,12 +85,7 @@ div.Nova-Conta button {
 
 }
 
-div.Nova-Conta a, a:visited{
-    text-decoration: none;
-    color: white;
-}
-
-div.Login button.btnAcessar:hover {
+div.Criar-Conta fieldset .btnAcessar:hover {
     background-color: #005373;
     border: 1px solid #0681c9;
 }
@@ -77,12 +95,12 @@ div.Nova-Conta button:hover {
     border: 1px solid #0681c9;
 }
 
-div.Login .esqSenha {
+div.Criar-Conta .esqSenha {
     font-size: 14px;
     text-decoration: underline;
 }
 
-div.Login .esqSenha:hover {
+div.Criar-Conta .esqSenha:hover {
     color: #3b8cbe;
     cursor: pointer;
 }
@@ -109,4 +127,18 @@ div.Nova-Conta p {
     align-items: center;
     text-align: center;
     font-size: 14px;
+}
+
+@media (max-width: 900px) {
+    div.Criar-Conta {
+        width: 90%;
+    }
+
+    div.Criar-Conta input {
+        width: 80%;
+    }
+
+    div.Nova-Conta {
+        width: 90%;
+    }
 }
