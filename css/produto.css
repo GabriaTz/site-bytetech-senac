@@ -54,6 +54,11 @@ div.descricao-compra {
     gap: 20px;
 }
 
+.botoes a {
+    color: #3B8CBE;
+    text-decoration: none;
+}
+
 button {
     position: relative;
     display: flex;
