@@ -1,83 +1,89 @@
 .pagamento {
-    background-color: lightgrey;
-}
-
-.continuar {
-    position: relative;
+    /* background-color: lightgrey;
+    border: 1px solid #3b8cbe;
+    font-size: bold;
+    font-size: 1rem;
+    width: 70%; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* margin: auto; */
-    background-color: #3b8cbe;
-    border: none;
-    border-radius: 10px;
-    height: 40px;
-    width: 100px;
-    color: white;
+    background-color: lightgrey;
+    border: 1px solid #3b8cbe;
     font-weight: bold;
-    cursor: pointer;
-    /* margin-top: 20px; */
-    min-height: 40px;
+    font-size: 1rem;
+    width: 70%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+
+
 }
 
-.continuar:hover {
-    background-color: #93DFF8;
-    border: 1px solid #0681c9;
+.pagamento h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .input-radio {
     height: 20px;
-    width: 20px;
-    align-items: center;
+    width: 20px
 }
 
-.pagamento {
+.pagamento-pix {
+    border: 2px solid #3b8cbe;
+    border-radius: 5px;
+    height: 50px;
+    width: 90%;
+}
 
+.pagamento-pix p {
+    border-top: 1px solid #3b8cbe;
+
+}
+
+.pagamento-pix img {
+    width: 40px;
+    height: 40px;
+}
+
+.pagamento-cartao {
+    border: 2px solid #3b8cbe;
+    border-radius: 5px;
+    height: 50px;
+    width: 90%;
+}
+
+.pagamento-cartao p {
+    border-top: 1px solid #3b8cbe;
+}
+
+.pagamento-cartao-formulario {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 20px 0px;
+    width: 100%;
     flex-wrap: nowrap;
-    text-align: center;
-    align-items: center;
-    width: 80%;
-    justify-content: center;
-    padding: 50px;
-    border: 2px solid #3b8cbe;
     align-content: center;
-    border: 2px solid #3b8cbe;
+    justify-content: center;
 }
 
 fieldset {
-    width: 100%;
-}
-
-.metodo-pagamento {
-   
-    text-align: center;
-    align-items: flex-start;
-    width: 80%;
-    padding: 50px;
-    border: 2px solid #3b8cbe;
-}
-
-.pagamento label {
-    font-weight: bold;
-}
-
-.pagamento-cartao fieldset {
-
+    border: 1px solid #3b8cbe;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 20px 0px;
     text-align: center;
     align-items: center;
-    width: 80%;
+    align-content: center;
     justify-content: center;
-    padding: 50px;
-    border: 1px solid #3b8cbe;
+    flex-wrap: nowrap;
+    flex-direction: column;
 }
 
-.pagamento-cartao input {
-    height: 2rem;
+.pagamento-cartao-formulario input {
+    /* height: 2rem; */
     width: 50%;
     padding: 0.6rem;
     border: 2px solid #3b8cbe;
@@ -86,9 +92,25 @@ fieldset {
     cursor: pointer;
 }
 
+.btn-continuar {
+    width: 50%;
+    background-color: #3b8cbe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-.pagamento input:focus {
+.btn-continuar:hover {
+    background-color: #96E4FD;
+}
 
-    border: 3px solid #96E4FD;
-
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
