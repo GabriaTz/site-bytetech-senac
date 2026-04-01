@@ -73,54 +73,54 @@
 
         <div class="pagamento">
 
-            <h1>Escolha o metodo de pagamento</h1>
-            <form class="metodo-pagamento">
-                <input type="radio" id="pix" name="pagamento" value="pix" class="input-radio">
-                <label for="pix">PIX</label><br>
-            </form>
+            <div class="metodo-pagamento">
+
+                <h1>Escolha o metodo de pagamento</h1>
+
+                <form class="pagamento-pix">
+                    <input type="radio" id="pix" name="pagamento" value="pix" class="input-radio">
+                    <label for="pix">PIX</label><br>
+                    <p>Até 10% de desconto com aprovação imediata que torna a expedição mais rápida do pedido.</p>
 
 
-
-
-            <!-- <p>Até 10% de desconto com aprovação imediata que torna a expedição mais rápida do pedido.</p> -->
-
-            <div class="pagamento-cartao">
-
+                    <form action="">
+                        <input type="radio" id="cartao" name="pagamento" value="cartao" class="input-radio">
+                        <label for="cartao">Cartao</label><br>
+                    </form>
                 </form>
 
-                <form action="">
-                    <input type="radio" id="cartao" name="pagamento" value="cartao" class="input-radio">
-                    <label for="cartao">Cartao</label><br></form>
+                <div class="pagamento-cartao">
 
+                    <form action="">
 
-                <form action="">
-                    
-                    <fieldset>
-                        <legend>Cartão de credito/debito</legend>
+                        <fieldset>
+                            <legend>Cartão de credito/debito</legend>
+                                
+                            <label for="num-cartao">Numero do cartão:</label>
+                            <input type="text" id="num-cartao" name="num-cartao" placeholder="Numero do cartão"
+                                required>
 
-                        <label for="num-cartao">Numero do cartão:</label><br>
-                        <input type="text" id="num-cartao" name="num-cartao" placeholder="Numero do cartão"
-                            required><br>
+                            <label for="nome-cartao">Nome impresso no cartão:</label>
+                            <input type="text" id="nome-cartao" name="nome-cartao"
+                                placeholder="Insira o nome impresso no cartão" required>
 
-                        <label for="nome-cartao">Nome impresso no cartão:</label><br>
-                        <input type="text" id="nome-cartao" name="nome-cartao"
-                            placeholder="Insira o nome impresso no cartão" required><br>
+                            <label for="validade-cartao">Validade do cartão:</label>
+                            <input type="text" id="validade-cartao" name="validade-cartao" placeholder="MM/AA" required>
 
-                        <label for="validade-cartao">Validade do cartão:</label><br>
-                        <input type="date" id="validade-cartao" name="validade-cartao" required><br><br>
+                            <label for="cod-segurança-cartao">Codigo de segurança:</label>
+                            <input type="text" id="cod-segurança-cartao" name="cod-segurança-cartao"
+                                placeholder="Insira o CVV" required>
 
-                        <label for="cod-segurança-cartao">Codigo de segurança:</label>
-                        <input type="text" id="cod-segurança-cartao" name="cod-segurança-cartao"
-                            placeholder="Insira o CVV" required><br>
+                            <label for="cpf">CPF:</label>
+                            <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx"
+                                pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" required>
+                            <br>
 
-                        <label for="cpf">CPF:</label>
-                        <input type="text" id="cpf" name="cpf" placeholder="xxx.xxx.xxx-xx"
-                            pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" required><br>
-
-
-                        <input type="submit" value="Continuar" class="continuar">
-                </form>
+                            <input type="submit" value="Continuar" class="continuar">
+                    </form>
+                </div>
             </div>
+        </div>
 
     </main>
     <script src="js/script.js"></script>
