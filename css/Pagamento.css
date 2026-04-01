@@ -1,0 +1,79 @@
+.pagamento {
+    background-color: lightgrey;
+}
+
+.continuar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    background-color: #3b8cbe;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    min-height: 40px;
+}
+
+.continuar:hover {
+    background-color: #93DFF8;
+    border: 1px solid #0681c9;
+}
+
+.input-radio {
+    height: 20px;
+    width: 20px;
+    align-items: center;
+}
+
+.pagamento {
+
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+fieldset {
+    width: 100%;
+}
+
+.metodo-pagamento {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: flex-start;
+    width: 80%;
+    justify-content: center;
+    padding: 50px;
+    border: 2px solid #3b8cbe;
+}
+
+.pagamento label {
+    font-weight: bold;
+}
+
+.pagamento-cartao input {
+    height: 2rem;
+    width: 50%;
+    padding: 0.6rem;
+    border: 2px solid #3b8cbe;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.pagamento input:focus {
+
+    border: 3px solid #96E4FD;
+
+}
