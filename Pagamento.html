@@ -69,30 +69,46 @@
 
     </header>
 
-    <main>
+    <main class="Main-pagamento">
 
         <div class="pagamento">
 
 
             <h1>Escolha o metodo de pagamento</h1>
 
-            <div class="pagamento-pix">g
-                <input type="radio" id="pix" name="pagamento" value="pix" class="input-radio">
-                <label for="pix">PIX</label><br>
-                <p>Até 10% de desconto com aprovação imediata que torna a expedição mais rápida do pedido.</p>
+            <div class="pagamento-pix">
+                <div>
+                    <input type="radio" id="pix" name="pagamento" value="pix" class="input-radio">
+                    <label for="pix"><span> PIX </span></label>
+                </div>
+
+                <div class="logo">
+                    <img src="Imagens/Icones/pix.svg" alt="pix">
+                </div>
             </div>
 
-            <div class="pagamento-cartao">
-                <input type="radio" id="cartao" name="pagamento" value="cartao" class="input-radio">
-                <label for="cartao">Cartao</label><br>
-                <p>até 12x sem juros</p>
+
+            <div class="pagamento-pix">
+                <div>
+                    <input type="radio" id="cartao" name="pagamento" value="cartao" class="input-radio">
+                    <label for="cartao"><span> Cartão </span></label>
+                </div>
+
+
+                <div class="logo">
+                    <img src="Imagens/Icones/credit-card-regular-full.svg" alt="cartão">
+                </div>
+
             </div>
+
 
             <div class="pagamento-cartao-formulario">
 
                 <form action="">
                     <fieldset>
                         <legend>Cartão de Credito/Débito</legend>
+
+                        <p>Até 12x sem juros.</p>
 
                         <div class="campo">
                             <!-- <label for="num-cartao">Numero do cartão:</label> -->
@@ -125,9 +141,36 @@
                         </div>
                         <br>
 
-                        <input type="submit" value="Continuar" class="btn-continuar">
+                         <label for="parcelas"> <p> Numero de parcelas:</p></label>
+
+                    <select id="parcelas" name="parcelas" required>
+                        <option value="1">1x a Vista</option>
+                        <option value="2">2x sem juros</option>
+                        <option value="3">3x sem juros</option>
+                        <option value="4">4x sem juros</option>
+                        <option value="5">5x sem juros</option>
+                        <option value="6">6x sem juros</option>
+                        <option value="7">7x sem juros</option>
+                        <option value="8">8x sem juros</option>
+                        <option value="9">9x sem juros</option>
+                        <option value="10">10x sem juros</option>
+                    </select>
+
+                        <input type="submit" value="confirmar" class="btn-confirmar">
                 </form>
             </div>
+        </div>
+
+        <div class="resumo-pedido">
+            <h2>Resumo do pedido</h2>
+
+            <p>Valor dos produtos: R$ :</p>
+            <p>Frete: R$ :</p>
+            <h2>Total: R$ :</h2>
+
+            <button class="btn-fechar-pedido">Fechar Pedido</button>
+
+        </div>
 
 
     </main>

@@ -1,3 +1,14 @@
+.Main-pagamento {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .pagamento {
     /* background-color: lightgrey;
     border: 1px solid #3b8cbe;
@@ -9,11 +20,12 @@
     border: 1px solid #3b8cbe;
     font-weight: bold;
     font-size: 1rem;
-    width: 70%;
+    width: 60%;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
     gap: 20px;
+    padding: 50px;
     align-items: center;
 
 
@@ -26,36 +38,65 @@
 }
 
 .input-radio {
+    position: relative;
+    top: 10px;
     height: 20px;
-    width: 20px
+    left: 10px;
+    width: 20px;
 }
 
 .pagamento-pix {
-    border: 2px solid #3b8cbe;
+    display: flex;
+    background-color: #3b8cbe;
+    /* border: 2px solid #3b8cbe; */
     border-radius: 5px;
-    height: 50px;
+    padding: 5px;
+    /* height: 50px; */
     width: 90%;
+    align-items: flex-start;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: nowrap;
+
 }
 
-.pagamento-pix p {
-    border-top: 1px solid #3b8cbe;
-
+.pagamento-pix span {
+    color: white;
+    position: relative;
+    top: 6px;
+    left: 15px;
 }
 
 .pagamento-pix img {
     width: 40px;
-    height: 40px;
+    height: auto;
 }
 
 .pagamento-cartao {
-    border: 2px solid #3b8cbe;
+    display: block;
+    background-color: #3b8cbe;
+    /* border: 2px solid #3b8cbe; */
     border-radius: 5px;
-    height: 50px;
+    padding: 5px;
+    /* height: 50px; */
     width: 90%;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 
 .pagamento-cartao p {
-    border-top: 1px solid #3b8cbe;
+    color: white;
+    font-size: 1rem;
+    /* border-top: 1px solid #3b8cbe; */
+}
+
+.pagamento-cartao span {
+    color: white;
+    position: relative;
+    top: 6px;
+    left: 15px;
 }
 
 .pagamento-cartao-formulario {
@@ -92,7 +133,7 @@ fieldset {
     cursor: pointer;
 }
 
-.btn-continuar {
+.btn-confirmar {
     width: 50%;
     background-color: #3b8cbe;
     color: white;
@@ -102,7 +143,7 @@ fieldset {
     cursor: pointer;
 }
 
-.btn-continuar:hover {
+.btn-confirmar:hover {
     background-color: #96E4FD;
 }
 
@@ -113,4 +154,78 @@ fieldset {
     align-items: center;
     text-align: center;
     width: 100%;
+}
+
+.resumo-pedido {
+    display: flex;
+    background-color: lightgrey;
+    border: 1px solid #3b8cbe;
+    font-weight: bold;
+    font-size: 1rem;
+    width: 20%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.resumo-pedido h2 {
+    background-color: #3b8cbe;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.btn-fechar-pedido {
+    width: 200px;
+    background-color: #006E1D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-fechar-pedido:hover {
+    background-color: #96E4FD;
+}
+
+@media (max-width: 1440px) {
+
+.pagamento {
+    width: 90%;
+
+}
+
+.resumo-pedido {
+    width: 30%;
+}
+
+.pagamento-pix p {
+display: none;
+}
+
+}
+
+@media (max-width: 768px) {
+
+    .Main-pagamento {
+    flex-direction: column;
+}
+
+.pagamento {
+    width: 100%;
+
+}
+
+.resumo-pedido {
+    width: 100%;
+}
+
+.pagamento-pix p {
+display: none;
+}
+
 }
