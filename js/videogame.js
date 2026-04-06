@@ -1,10 +1,10 @@
 import api from "./api.js"
 
 
-
+const videogame = "Videogames";
 async function buscarVideoGames() {
     try {
-        const response = await api.get('/Produto');
+        const response = await api.get(`/Produto/Categoria/${videogame}`);
         const produtos = response.data;
         console.log(produtos)
 
