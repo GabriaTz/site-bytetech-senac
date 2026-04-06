@@ -264,7 +264,7 @@ main {
     align-items: center;
     flex-wrap: nowrap;
     min-height: 100vh;
-    /* vh = altura da janela */
+    /* width: 100vw; */
     padding: 20px;
 }
 
