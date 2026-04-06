@@ -1,37 +1,45 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bytech</title>
-    <link rel="stylesheet" href="style.css">
-        <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
-        <script src="https://kit.fontawesome.com/54ad1fd42c.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
+
+    <script src="https://kit.fontawesome.com/54ad1fd42c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-  <header>
-    <div class="logo-img"><a href="index.html"><img src="Bytech_logo.svg" alt="logo"></a></div>
-
-    <!-- <div class="titulo">Bytech<br>
-      <p>cada byte importa</p>
-    </div> -->
-
-    <div>
-                <button class="login">Login</button>
-      <button class="login"><i class="fa-solid fa-cart-shopping"></i></button>
-    </div>
-
-<div>
+ <header>
+  <div class="logo-img"><a href="index.html"><img src="Imagens/logo/bytech_logo.svg" alt="logo" title="Voltar a pagina inicial"></a></div>
+ 
+  <!-- Botões sempre visíveis -->
+  <div class="nav-login">
+    <section class="avatar"><i class="fa-regular fa-circle-user"></i></section>
+    <section class="logintext">Olá, <a href="Login.html">Entre</a> <br> ou <a href="Login.html"> Cadastre-se</a></section>
+    <a href="Login.html"><button class="login">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+   <a href=""><button class="login"><i class="fa-solid fa-cart-shopping"></i></button></a>
+ 
+    <!-- Botão hamburguer (visível apenas em mobile) -->
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+ 
+  <!-- Menu mobile (pesquisa + nav ficam aqui no mobile) -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="nav-pesquisa">
       <section class="pesquisa">
         <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
       </section>
-</div>
-
-
+    </div>
     <div class="nav">
-
       <ul>
         <li><a href="computadores.html"> Computadores </a></li>
         <li><a href="videogames.html"> Videogames </a></li>
@@ -39,130 +47,178 @@
         <li><a href="servicos.html"> Serviços </a></li>
       </ul>
     </div>
+  </div>
+ 
+  <!-- Pesquisa e nav normais (visíveis apenas acima de 768px) -->
+  <div class="nav-pesquisa desktop-only">
+    <section class="pesquisa">
+      <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
+    </section>
+  </div>
+  <div class="nav desktop-only">
+    <ul>
+      <li><a href="computadores.html"> Computadores </a></li>
+      <li><a href="videogames.html"> Videogames </a></li>
+      <li><a href="contato.html"> Contato </a></li>
+      <li><a href="servicos.html"> Serviços </a></li>
+    </ul>
+  </div>
+ 
+</header>
 
-  </header>
 
 <main>
 
+<div class="conteudo">
 
-  <div class="conteudo">
+<div class="contato">
 
-    <div class="contato">
-        <h2>Serviços</h2><br>
-        <h3>Reparo e Manutençao</h3>
-        <br>
+<h2>Serviços</h2>
+
+<br>
+
+<h3>Reparo e Manutenção</h3>
+
+<br>
+
 <ul>
-<li> 
-Diagnóstico Grátis
-Trazemos seu equipamento e fazemos uma avaliação completa sem custo.
-</li>
-<li>
-  
-Orçamento Transparente
-Enviamos o orçamento detalhado via WhatsApp antes de qualquer reparo.
-</li>
-<li>
 
-Conserto com Garantia
-Realizamos o serviço com peças de qualidade e garantia de 90 dias.
-</li>
-<li>
-  
-Entrega ou Retirada
-Retire na loja ou solicite entrega. Seu equipamento de volta em perfeito estado.
-</li>
+<p>Qualidade, confiança e agilidade na manutenção do seu videogame.
+Seu console em boas mãos.</p>
 
 </ul>
+
 <br>
-       
-        <p>Nossa equipe técnica cuida do seu console ou PC com diagnóstico completo, peças originais e garantia no serviço</p>
-        <br>
 
-       <!-- <h2>Orçamentos</h2><br>
-       <p>Para solicitar um orçamento sobre infraestrutura de redes, entre em contato conosco através dos nossos canais de atendimento.</p>
-        <br> -->
-          
+<p>
+Nossa equipe técnica cuida do seu console ou PC com diagnóstico completo, peças originais e garantia no serviço
+</p>
 
-<h2>Serviços de manutençao:</h2><br>
+<br>
+
+<h2>Serviços de manutenção:</h2>
+
+<br>
 
 <div class="gallery">
 
 <div class="gallery-item">
-  <a target="_blank" href="Imagens/96.jpg">
-    <img src="Imagens/96.jpg" alt="Cinque Terre" width="600" height="400">
-  </a>
-  <div class="desc">Manutençao para qualquer problema</div>
-  <button>Agende</button>
+<a target="_blank" href="/Imagens/pcfix.jpg">
+<img src="Imagens/pcfix.jpg">
+</a>
+<div class="desc">Manutenção para qualquer problema no PC</div>
+<button>Agende</button>
 </div>
 
 <div class="gallery-item">
-  <a target="_blank" href="Imagens/manuserver.jpg">
-    <img src="Imagens/manuserver.jpg" alt="Forest" width="600" height="400">
-  </a>
-  <div class="desc">Manutençao de servidores e data centers</div>
-  <button>Agende</button>
+<a target="_blank" href="/Imagens/play.jpg">
+<img src="Imagens/ps5.jpg">
+</a>
+<div class="desc">Manutenção para Playstation</div>
+<button>Agende</button>
 </div>
 
 <div class="gallery-item">
-  <a target="_blank" href="Imagens/manuPC.jpg">
-    <img src="Imagens/manuPC.jpg" alt="Northern Lights" width="600" height="400">
-  </a>
-  <div class="desc">Manutençao de PCs</div>
-  <button>Agende</button>
+<a target="_blank" href="/Imagens/xbox.jpg">
+<img src="Imagens/xbox.jpg">
+</a>
+<div class="desc">Manutenção para Xbox</div>
+<button>Agende</button>
 </div>
 
 <div class="gallery-item">
-  <a target="_blank" href="Imagens/infraREDES.webp">
-    <img src="Imagens/infraREDES.webp" alt="Mountains" width="600" height="400">
-  </a>
-  <div class="desc">Manutençao de infraestrutura de redes</div>
-  <button>Agende</button>
+<a target="_blank" href="/Imagens/nintendo.jpg">
+<img src="Imagens/nintendo.jpg">
+</a>
+<div class="desc">Manutenção para Nintendo</div>
+<button>Agende</button>
 </div>
+
 </div>
-            
-    <div>
 
-                    <h2>Canais de atendimento</h2>
-            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            <a href=""><i class="fa-solid fa-phone-volume"></i></a>
-            <a href=""><i class="fa-regular fa-comments"></i></a> 
-            <a href=""><i class="fa-solid fa-envelope"></i></a>
-    </div>
-    </div>
+<br>
 
+<h2>Canais de atendimento</h2>
 
+<a href=""><i class="fa-brands fa-whatsapp"></i></a>
+<a href=""><i class="fa-solid fa-phone-volume"></i></a>
+<a href=""><i class="fa-regular fa-comments"></i></a> 
+<a href=""><i class="fa-solid fa-envelope"></i></a>
 
-    
-<!-- 
-    <div class="coluna">
-        <h2>Monte seu PC conosco</h2>
-        <p>Precisa de computadores para sua empresa e nao sabe exatamente qual hardware seria o adequado ? conte com nossa equipe para montar e configurar o PC ideal para suas necessidades.</p>
-        <button>Saiba mais</button></div>
+</div> <!-- fecha contato -->
 
-        <div class="coluna">
-            <h2>Monte seu servidor de redes</h2>
-        <p>Montamos todo seu servidor e rack desde Switchs e Patch panels, alem de documentarmos. oferecemos treinamento para sua equipe para manutençao basica dos equipamentos</p>
-        <button>Saiba mais</button></div> -->
-  </div>
+</div> <!-- fecha conteudo -->
+
 </main>
-</body>
+<div class="feedback-container">
+
+    <h2 class="titulo-feedback">⭐ Feedback dos Clientes</h2>
+
+    <div class="feedbacks">
+
+        <div class="feedback">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Atendimento rápido e resolveu meu PS5!"</p>
+            <h4>João</h4>
+        </div>
+
+        <div class="feedback">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Muito confiável, recomendo demais."</p>
+            <h4>Maria</h4>
+        </div>
+
+        <div class="feedback">
+            <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Preço justo e serviço top."</p>
+            <h4>Carlos</h4>
+        </div>
+
+    </div>
+
+</div>
 
 <footer>
-  <div class="rodape">
-    <div class="logo-rodape">
-  <div class="logo-img"><a href="index.html"><img src="bytech_logo.svg" alt="logo"></a></div>  
-    </div>
-    <div class="texto-rodape">
-        <ul>
-            <li><a href="quem-somos.html">Quem somos</a></li>
-    <li><a href="serviços.html">Serviços</a></li>
-            <li><a href="#">Orçamentos</a></li>
-            <li><a href="#">Noticias</a></li>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Voltar ao topo</a></li>
-        </ul>
-    </div>
-  </div>
-</footer>
 
+<div class="rodape">
+
+<div class="logo-rodape">
+<div class="logo-img">
+  <div class="logo-img"><a href="index.html"><img src="Imagens/logo/bytech_logo.svg" alt="logo" title="Voltar a pagina inicial"></a></div>
+</div>
+</div>
+
+<div class="texto-rodape">
+<ul>
+<li><a href="quem-somos.html">Quem somos</a></li>
+<li><a href="serviços.html">Serviços</a></li>
+<li><a href="#">Orçamentos</a></li>
+<li><a href="#">Noticias</a></li>
+<li><a href="index.html">Home</a></li>
+<li><a href="#">Voltar ao topo</a></li>
+</ul>
+</div>
+
+</div>
+
+</footer>
+  <script src="js/script.js"></script>
+</body>
 </html>

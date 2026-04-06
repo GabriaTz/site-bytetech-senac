@@ -1,0 +1,13 @@
+PC Gamer Mancer Krampus, AMD Ryzen 5 5500, GeForce RTX 3060 12GB, 16GB DDR4, SSD 480GB
+
+1 x Processador AMD Ryzen 5 5500, 6-Core, 12-Threads, 3.6GHz (4.2GHz Turbo), Cache 19MB, AM4, 100-000000457-OEM
+
+1 x Cooler Para Processador Hawin VC-120, 120mm, Preto, HWN-VC120-BK
+
+1 x Placa Mae Mancer A520M DXSC, DDR4, Socket AMD AM4, M-ATX, Chipset AMD A520, MCR-A520M-DXV4SC
+
+2 x Memoria Mancer Vant S, 8GB (1x8GB), DDR4, 3200MHz, C19, Preto, MCR-VNT3200-8GB
+
+1 x SSD Mancer Reaper RF, 480GB, 2.5, Sata III 6GB/s, Leitura 500MB/s, Gravacao 400MB/s, MCR-RPRF-480GB
+
+Existem mais 6 itens nessa configuração, clique para ver mais

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Carrinho.css">
+    <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
+    <script src="https://kit.fontawesome.com/54ad1fd42c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-img"><a href="index.html"><img src="Imagens/logo/bytech_logo.svg" alt="logo"
+                    title="Voltar a pagina inicial"></a></div>
+
+        <!-- Botões sempre visíveis -->
+        <div class="nav-login">
+            <section class="avatar"><i class="fa-regular fa-circle-user"></i></section>
+            <section class="logintext">Olá, <a href="Login.html">Entre</a> <br> ou <a href="Login.html"> Cadastre-se</a>
+            </section>
+            <a href="Login.html"><button class="login">Login <i
+                        class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+            <a href=""><button class="login"><i class="fa-solid fa-cart-shopping"></i></button></a>
+
+            <!-- Botão hamburguer (visível apenas em mobile) -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Menu mobile (pesquisa + nav ficam aqui no mobile) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="nav-pesquisa">
+                <section class="pesquisa">
+                    <input class="pesquisa" type="text" placeholder="Pesquisar"><i
+                        class="fa-solid fa-magnifying-glass"></i>
+                </section>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="computadores.html"> Computadores </a></li>
+                    <li><a href="videogames.html"> Videogames </a></li>
+                    <li><a href="contato.html"> Contato </a></li>
+                    <li><a href="servicos.html"> Serviços </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pesquisa e nav normais (visíveis apenas acima de 768px) -->
+        <div class="nav-pesquisa desktop-only">
+            <section class="pesquisa">
+                <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
+            </section>
+        </div>
+        <div class="nav desktop-only">
+            <ul>
+                <li><a href="computadores.html"> Computadores </a></li>
+                <li><a href="videogames.html"> Videogames </a></li>
+                <li><a href="contato.html"> Contato </a></li>
+                <li><a href="servicos.html"> Serviços </a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="Carrinho">
+            <h1>Seu Carrinho</h1>
+            <p class="item">Itens adicionados ao carrinho:</p>
+
+            <div class="Resumo">
+                <span>
+                    <img src="Imagens/ps5pro.jpg" alt="PS5 Pro">
+
+                    <label for="Quantidade">Quantidade:</label>
+
+                    <select id="Quantidade" name="Quantidade">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                    <br>
+                    <p class="preco">Preco: R$ 5999,00</p>
+                    <button class="btn-Remover-Carrinho">X</button>
+                </span>
+            </div>
+            <p class="Limpar-Carrinho">Limpar carrinho <button class="btn-Remover-Carrinho">X</button></p>
+
+            <h2>Entrega</h2>
+            <div class="frete">
+
+                <form>
+                    <input type="text" id="CEP" name="CEP" placeholder="Insira seu CEP" class="input-cep"><br>
+                </form>
+                <button class="btnFrete">Calcular o frete</button>
+            </div>
+
+            <h2>Resumo do Pedido</h2>
+            <div class="Total">
+
+                <p class="Valor-Itens">Total dos Itens: R$ 0,00</p>
+                <p class="Valor-Frete">Frete: R$ 0,00</p>
+                <p class="Valor-Total-Compra">Total: R$ 0,00</p>
+
+                <a href="Pagamento.html" class="btnfinalizar">Finalizar Compra</a>
+            </div>
+        </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+<footer>
+    <div class="rodape">
+        <div class="logo-rodape">
+            <div class="logo-img"><a href="index.html"><img src="Imagens/logo/bytech_logo.svg" alt="logo"
+                        title="Voltar a pagina inicial"></a></div>
+        </div>
+        <div class="texto-rodape">
+            <ul>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Orçamentos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Voltar ao topo</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

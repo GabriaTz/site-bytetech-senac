@@ -1,0 +1,260 @@
+div.vitrine {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    display: grid;
+    /* Divide em duas colunas: a primeira ocupa 60% e a segunda 40% */
+    grid-template-columns: 6fr 7fr 7fr;
+    gap: 40px;
+    padding: 0 40px;
+    max-width: fit-content;
+    margin: 0 auto;
+
+}
+
+div.descricao-produto {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    gap: 20px;
+}
+
+.descricao-produto p {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+div.descricao-compra {
+
+    background-color: #005373;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.botoes a {
+    color: #3B8CBE;
+    text-decoration: none;
+}
+
+button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    background-color: #3b8cbe;
+    border: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    /* margin-top: 20px; */
+    min-height: 40px;
+}
+
+.btn-compra {
+    background-color: #006E1D;
+    height: 40px;
+    width: 150px;
+}
+
+.input-cep {
+    border: 0;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    height: 40px;
+}
+
+p.preco {
+    padding: 50px 0px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+div.frete {
+
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: stretch;
+    padding: 20px 0px;
+
+}
+
+.detalhes-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    font-size: 16px;
+
+}
+
+.detalhes-produto p {
+    padding: 50px 200px;
+}
+
+div.contato {
+
+    position: relative;
+    background-color: lightgray;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 20px;
+
+}
+
+.contato i {
+    font-size: 50px;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #3b8cbe;
+}
+
+.Lista-Descricao {
+    color: rgb(46, 46, 46);
+    text-align: center;
+    font-size: large;
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatoArea {
+    flex-direction: row;
+}
+
+.contatoArea a {
+display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #3b8cbe;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1250px) {
+
+    div.vitrine {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-items: center;
+        align-items: center;
+        margin: 40px auto;
+    }
+
+
+}
+
+@media (max-width: 900px) {
+
+    div.vitrine {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 40px auto;
+    }
+
+    /* div.imagen-produto {
+        width: 100%;
+        height: auto;
+    } */
+
+        img.imagens {
+        width: 100%;
+        height: auto;
+    }
+
+    .detalhes-produto p {
+    padding: 0 0;
+}
+
+    /* .vitrine {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .descricao-produto {
+        font-size: 1rem;
+    }
+
+    .detalhes-produto p {
+        padding: 20px;
+    } */
+    
+}
+
+
+@media (max-width: 900px) {
+
+.detalhes-produto {
+    padding: 50px;
+    gap: 20px;
+}
+
+.detalhes-produto h2 {
+    text-align: center;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+div.frete {
+    flex-direction: column;
+}
+
+}

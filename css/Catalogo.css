@@ -1,0 +1,87 @@
+/* Container do Catálogo usando Grid */
+.catalogo {
+    display: grid;
+    /* MÁGICA DO GRID: Cria colunas automáticas de no mínimo 250px. Se a tela crescer, ele encaixa mais colunas! */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    /* Não deixa a loja esticar infinitamente em monitores ultrawide */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* O Card do Produto */
+.card-produto {
+    background-color: #ffffff;
+    /* Fundo branco destaca o produto */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 8px;
+    /* Borda menos arredondada dá um ar mais sério */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombra mais sutil */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease;
+}
+
+.card-produto:hover {
+    transform: translateY(-5px);
+    /* Faz o card "flutuar" quando passa o mouse */
+    box-shadow: 0 8px 16px rgba(0, 83, 115, 0.2);
+}
+
+.card-produto .imagens {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+/* Tipografia do Card */
+.nome-produto {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+.preco-antigo {
+    font-size: 14px;
+    color: #888;
+    text-decoration: line-through;
+    /* Corta o preço antigo */
+}
+
+.preco-novo {
+    font-size: 24px;
+    color: #008cff;
+    /* cor preço novo */
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Botão de comprar atualizado */
+.btn-comprar {
+    background-color: #3b8cbe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.2s;
+}
+
+.btn-comprar:hover {
+    background-color: #29adff;
+}
+
+
