@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bytech</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/revisao.css">
+    <link rel="stylesheet" href="css/concluido.css">
     <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
     <script src="https://kit.fontawesome.com/54ad1fd42c.js" crossorigin="anonymous"></script>
 </head>
@@ -69,58 +69,36 @@
 
     </header>
 
-    <main class="main-revisao">
+    <main>
 
-        <div class="rev-background">
-            <h1 class="h1-rev">Revisao do Pedido</h1><br>
+        <div class="conclusao">
 
-            <div class="rev-grid">
-
-
-                <div class="inf-nf">
-                    <h2>Informações na nota fiscal do pedido:</h2>
-                    <p>Nome:</p>
-                    <p>CPF:</p>
-                    <P>E-Mail:</P>
-                    <p>Celular:</p>
-                </div>
-
-                <div class="end-envio">
-                    <h2>Seu pedido será entregue em:</h2>
-                    <p>Endereço:</p>
-                    <p>Complemento:</p>
-                    <p>Cidade:</p>
-                    <p>CEP:</p>
-                </div>
-
-                <div class="rev-produto">
-                    <h2>Produtos:</h2>
-
-                </div>
-
-                <div class="forma-pagamento">
-                    <h2>Forma de pagamento:</h2>
-                    <p></p>
-                </div>
-
-                <div class="resumo-compra">
-                    <h2>Resumo do pedido:</h2><br>
-                    <p>Valor dos produtos:</p><br>
-                    <p>Descontos:</p><br>
-                    <p>Frete:</p><br>
-                    <h2>Total:</h2><br>
-                    <p>Deseja finalizar a compra ?</p><br>
-
-                    <div class="btn-finalizar-div">
-                        <button class="btn-finalizar-compra">Finalizar Compra</button>
-                        <button class="btn-voltar-compra">Voltar</button>
-                    </div>
-
-                </div>
-
-
-
+            <div class="concluido">
+                <h1>Pedido Realizado com Sucesso</h1>
+                <h2>numero do pedido: 123456</h2>
+                <p>Obrigado por comprar conosco! para ver o status do seu pedido acesse sua conta na nossa loja.
+                    Agradecemos por escolher a Bytech para suas
+                    necessidades de tecnologia.</p>
+                <a href="index.html"><button class="voltar">Voltar para a Home</button></a>
             </div>
+
+            <div class="codigo-pix">
+                <h3>Forma de pagamento</h3>
+                <p>o pagamento deve ser realizado por PIX.</p>
+
+                <ol>
+                    <li>Abra o app do seu banco ou instituição financeira e selecione a opção Pix.</li>
+                    <li>Escolha a opção de pagar com QR CODE e escaneie o código ao lado.</li>
+                    <li>Confirme as informações e finalize sua compra.</li>
+                    <li>Se estiver efetuando o pagamento em seu computador, clique no botão "COPIAR CÓDIGO PIX"</li>
+                    <li>Após COPIAR agora é só COLAR no campo de pagamento PIX de seu banco.</li>
+                    <li>Esse QR CODE vence em 06/04/2026 20:43 30 minutos. Após vencimento será cancelado.</li>
+                </ol>
+
+                <img src="Imagens/QR-test-url-senac.png" alt="Código QR do PIX">
+                <button class="copiar-pix" onclick="copiarCodigoPix()">COPIAR CÓDIGO PIX</button>
+            </div>
+
         </div>
     </main>
     <script src="js/script.js"></script>
