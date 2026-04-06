@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     min-height: 100vh;
     /* padding: 20px; */
     justify-content: center;
@@ -29,15 +29,26 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    max-width: 1200px;
+    max-width: 90%;
     margin: auto;
+}
+
+
+.rev-grid h2 {
+    background-color: #3B8CBE;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    text-align: center;
+
 }
 
 /* cards padrão */
 .rev-grid>div {
     border: 1px solid #7e9aab;
+    border-radius: 5px;
     background-color: lightgray;
-    padding: 15px;
+    /* padding: 15px; */
+    min-height: 90px; /* para garantir que os cards tenham uma altura mínima consistente */
 }
 
 /* TOPO - ocupa tudo */
@@ -75,7 +86,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -106,7 +117,7 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -135,4 +146,19 @@
 
 .btn-finalizar-compra:hover {
     background-color: #96E4FD;
+}
+
+@media only screen and (max-width: 600px) {
+    .rev-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .resumo-compra {
+        grid-column: 1 / 2;
+        grid-row: 6 / 7;
+    }
+
+    .btn-finalizar-div {
+        grid-column: 1 / 2;
+    }
 }
