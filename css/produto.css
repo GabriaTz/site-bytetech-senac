@@ -1,4 +1,4 @@
-div.vitrine {
+.vitrine {
     background-color: #353535;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@ div.vitrine {
 
 }
 
-div.descricao-produto {
+.descricao-produto {
 
     display: flex;
     flex-direction: column;
@@ -37,7 +37,7 @@ div.descricao-produto {
     color: white;
 }
 
-div.descricao-compra {
+.descricao-compra {
 
     background-color: #005373;
     display: flex;
@@ -59,7 +59,7 @@ div.descricao-compra {
     text-decoration: none;
 }
 
-button {
+.btn-compra, .btn-formas-pagamento, .btn-add-carrinho, .btn-frete {
     position: relative;
     display: flex;
     justify-content: center;
@@ -91,14 +91,14 @@ button {
     height: 40px;
 }
 
-p.preco {
+.preco {
     padding: 50px 0px;
     text-align: center;
     font-size: 1.5rem;
     color: white;
 }
 
-div.frete {
+.frete {
 
     background-color: lightgray;
     display: flex;
@@ -108,6 +108,11 @@ div.frete {
     gap: 20px;
     width: stretch;
     padding: 20px 0px;
+
+}
+
+.btn-frete {
+    padding: 0px 20px;
 
 }
 
@@ -125,7 +130,7 @@ div.frete {
     padding: 50px 200px;
 }
 
-div.contato {
+.contato {
 
     position: relative;
     background-color: lightgray;
@@ -166,7 +171,7 @@ div.contato {
 }
 
 .contatoArea a {
-display: inline-flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     color: #3b8cbe;
@@ -181,7 +186,7 @@ display: inline-flex;
 
 @media (max-width: 1250px) {
 
-    div.vitrine {
+    .vitrine {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -195,7 +200,7 @@ display: inline-flex;
 
 @media (max-width: 900px) {
 
-    div.vitrine {
+    .vitrine {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -207,14 +212,14 @@ display: inline-flex;
         height: auto;
     } */
 
-        img.imagens {
+    .imagens {
         width: 100%;
         height: auto;
     }
 
     .detalhes-produto p {
-    padding: 0 0;
-}
+        padding: 0 0;
+    }
 
     /* .vitrine {
         display: flex;
@@ -230,31 +235,31 @@ display: inline-flex;
     .detalhes-produto p {
         padding: 20px;
     } */
-    
+
 }
 
 
 @media (max-width: 900px) {
 
-.detalhes-produto {
-    padding: 50px;
-    gap: 20px;
-}
+    .detalhes-produto {
+        padding: 50px;
+        gap: 20px;
+    }
 
-.detalhes-produto h2 {
-    text-align: center;
-}
+    .detalhes-produto h2 {
+        text-align: center;
+    }
 
-.botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 
-div.frete {
-    flex-direction: column;
-}
+    .frete {
+        flex-direction: column;
+    }
 
 }
