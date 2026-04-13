@@ -21,7 +21,9 @@ async function buscarVideoGames() {
                 <p class="descricao">${p.descricao}</p>
                 <div class="compra">
                     <div ><span class="preco">R$ ${p.precoVenda}</span></div>
-                    <div class="botao">Comprar</div>
+                    <div class="botao">
+                        <a href="../Pagamento.html">Comprar</a>
+                    </div>
                 </div>
             `;
 
