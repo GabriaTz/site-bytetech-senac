@@ -63,9 +63,14 @@ main{
 .botao {
     background-color: rgb(58, 214, 58);
     padding: 10px;
-    color: #fff;
     font-weight: bold;
     border-radius: 5px;
+    
+}
+
+.botao a {
+    text-decoration: none;
+    color: #fff;
 }
 
 .botao:hover{

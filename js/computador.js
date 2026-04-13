@@ -60,10 +60,30 @@ async function buscarComputadores() {
                 <p class="descricao">${p.descricao}</p>
                 <div class="compra">
                     <div ><span class="preco">R$ ${p.precoVenda}</span></div>
-                    <div class="botao"><a href="../Pagamento.html">Comprar</a></div>
+                    <div class="botao">
+                        <a class="produtoSelecionado" href="">Detalhes</a>
+                    </div>
                 </div>
             `;
 
+            let link = produtoDiv.querySelector(".produtoSelecionado");
+            switch(p.id){
+                case 1:
+                    link.href = "../Produto.html"
+                    break;
+                case 2: // ID 2 = XBOX
+                    link.href = "../Produto.html"
+                    break;
+                case 3:
+                    link.href = "../Produto.html"
+                    break;
+                case 4:
+                    link.href = "../Produto.html"
+                    break;
+                default:
+                    link.href = ""
+            }
+            
             container.appendChild(produtoDiv);
         });
 
