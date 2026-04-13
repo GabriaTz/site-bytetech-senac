@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bytech</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/revisao.css">
+    <link rel="icon" type="image/svg+xml" href="Imagens/favicon.svg">
+    <script src="https://kit.fontawesome.com/54ad1fd42c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-img"><a href="index.html"><img src="Imagens/logo/bytech_logo.svg" alt="logo"
+                    title="Voltar a pagina inicial"></a></div>
+
+        <!-- Botões sempre visíveis -->
+        <div class="nav-login">
+            <section class="avatar"><i class="fa-regular fa-circle-user"></i></section>
+            <section class="logintext">Olá, <a href="Login.html">Entre</a> <br> ou <a href="Login.html"> Cadastre-se</a>
+            </section>
+            <a href="Login.html"><button class="login">Login <i
+                        class="fa-solid fa-arrow-right-to-bracket"></i></button></a>
+            <a href=""><button class="login"><i class="fa-solid fa-cart-shopping"></i></button></a>
+
+            <!-- Botão hamburguer (visível apenas em mobile) -->
+            <button class="hamburger" id="hamburgerBtn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+
+        <!-- Menu mobile (pesquisa + nav ficam aqui no mobile) -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="nav-pesquisa">
+                <section class="pesquisa">
+                    <input class="pesquisa" type="text" placeholder="Pesquisar"><i
+                        class="fa-solid fa-magnifying-glass"></i>
+                </section>
+            </div>
+            <div class="nav">
+                <ul>
+                    <li><a href="computadores.html"> Computadores </a></li>
+                    <li><a href="videogames.html"> Videogames </a></li>
+                    <li><a href="contato.html"> Contato </a></li>
+                    <li><a href="servicos.html"> Serviços </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pesquisa e nav normais (visíveis apenas acima de 768px) -->
+        <div class="nav-pesquisa desktop-only">
+            <section class="pesquisa">
+                <input class="pesquisa" type="text" placeholder="Pesquisar"><i class="fa-solid fa-magnifying-glass"></i>
+            </section>
+        </div>
+        <div class="nav desktop-only">
+            <ul>
+                <li><a href="computadores.html"> Computadores </a></li>
+                <li><a href="videogames.html"> Videogames </a></li>
+                <li><a href="contato.html"> Contato </a></li>
+                <li><a href="servicos.html"> Serviços </a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="main-revisao">
+
+        <div class="rev-background">
+            <h1 class="h1-rev">Revisao do Pedido</h1><br>
+
+            <div class="rev-grid">
+
+
+                <div class="inf-nf">
+                    <h2>Informações na nota fiscal do pedido:</h2>
+                    <p>Nome:</p>
+                    <p>CPF:</p>
+                    <P>E-Mail:</P>
+                    <p>Celular:</p>
+                </div>
+
+                <div class="end-envio">
+                    <h2>Seu pedido será entregue em:</h2>
+                    <p>Endereço:</p>
+                    <p>Complemento:</p>
+                    <p>Cidade:</p>
+                    <p>CEP:</p>
+                </div>
+
+                <div class="rev-produto">
+                    <h2>Produtos:</h2>
+
+                </div>
+
+                <div class="forma-pagamento">
+                    <h2>Forma de pagamento:</h2>
+                    <p></p>
+                </div>
+
+                <div class="resumo-compra">
+                    <h2>Resumo do pedido:</h2><br>
+                    <p>Valor dos produtos:</p><br>
+                    <p>Descontos:</p><br>
+                    <p>Frete:</p><br>
+                    <h2>Total:</h2><br>
+                    <p>Deseja finalizar a compra ?</p><br>
+
+                    <div class="btn-finalizar-div">
+                        <a href="concluido.html"><button class="btn-finalizar-compra">Finalizar Compra</button></a>
+                        <a href="Pagamento.html"><button class="btn-voltar-compra">Voltar</button></a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+<footer>
+    <div class="rodape">
+        <div class="logo-rodape">
+            <div class="logo-img"><a href="index.html"><img src="Imagens/logo/bytech_logo.svg" alt="logo"
+                        title="Voltar a pagina inicial"></a></div>
+        </div>
+        <div class="texto-rodape">
+            <ul>
+                <li><a href="quem-somos.html">Quem somos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="#">Orçamentos</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Voltar ao topo</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</html>

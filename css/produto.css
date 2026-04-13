@@ -1,29 +1,75 @@
-div.vitrine {
+.vitrine {
     background-color: #353535;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    flex-wrap: nowrap;
-
-    display: grid;
-    /* Divide em duas colunas: a primeira ocupa 60% e a segunda 40% */
-    grid-template-columns: 6fr 7fr 7fr;
+    flex-wrap: wrap;
+    display: flex;
     gap: 40px;
-    padding: 0 40px;
+    padding: 40px 40px;
     max-width: fit-content;
     margin: 0 auto;
+    justify-items: center;
+    grid-auto-flow: row;
+    align-content: center;
+}
+
+.imagens-produto {
+    display: flex;
+    width: auto;
+    height: auto;
+    gap: 20px;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+.imagem-principal {
+    display: flex;
+    flex-shrink: 1;
+
 
 }
 
-div.descricao-produto {
+.img-miniaturas {
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    gap: 20px;
+    align-content: flex-start;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.miniatura-1:hover {
+    cursor: pointer;
+    border: 2px solid #3b8cbe;
+}
+
+.miniatura-2:hover {
+    cursor: pointer;
+    border: 2px solid #3b8cbe;
+}
+
+.miniatura-3:hover {
+    cursor: pointer;
+    border: 2px solid #3b8cbe;
+}
+
+.descricao-produto {
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.25rem;
     text-transform: uppercase;
     gap: 20px;
 }
@@ -37,7 +83,7 @@ div.descricao-produto {
     color: white;
 }
 
-div.descricao-compra {
+.descricao-compra {
 
     background-color: #005373;
     display: flex;
@@ -45,7 +91,20 @@ div.descricao-compra {
     align-items: center;
     justify-content: center;
     gap: 20px;
+    width: 500px;
+    height: 250px;
+    flex-wrap: nowrap;
 
+
+}
+
+.titulo-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
 }
 
 .botoes {
@@ -59,7 +118,10 @@ div.descricao-compra {
     text-decoration: none;
 }
 
-button {
+.btn-compra,
+.btn-formas-pagamento,
+.btn-add-carrinho,
+.btn-frete {
     position: relative;
     display: flex;
     justify-content: center;
@@ -91,14 +153,14 @@ button {
     height: 40px;
 }
 
-p.preco {
+.preco {
     padding: 50px 0px;
     text-align: center;
     font-size: 1.5rem;
     color: white;
 }
 
-div.frete {
+.frete {
 
     background-color: lightgray;
     display: flex;
@@ -106,8 +168,13 @@ div.frete {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    width: stretch;
+    width: 100%;
     padding: 20px 0px;
+
+}
+
+.btn-frete {
+    width: 120px;
 
 }
 
@@ -125,7 +192,7 @@ div.frete {
     padding: 50px 200px;
 }
 
-div.contato {
+.contato {
 
     position: relative;
     background-color: lightgray;
@@ -166,7 +233,7 @@ div.contato {
 }
 
 .contatoArea a {
-display: inline-flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     color: #3b8cbe;
@@ -181,7 +248,7 @@ display: inline-flex;
 
 @media (max-width: 1250px) {
 
-    div.vitrine {
+    .vitrine {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -195,7 +262,7 @@ display: inline-flex;
 
 @media (max-width: 900px) {
 
-    div.vitrine {
+    .vitrine {
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -207,14 +274,14 @@ display: inline-flex;
         height: auto;
     } */
 
-        img.imagens {
+    .imagens {
         width: 100%;
         height: auto;
     }
 
     .detalhes-produto p {
-    padding: 0 0;
-}
+        padding: 0 0;
+    }
 
     /* .vitrine {
         display: flex;
@@ -230,31 +297,46 @@ display: inline-flex;
     .detalhes-produto p {
         padding: 20px;
     } */
-    
+
 }
 
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
 
-.detalhes-produto {
-    padding: 50px;
-    gap: 20px;
-}
+    .detalhes-produto {
+        padding: 50px;
+        gap: 20px;
+    }
 
-.detalhes-produto h2 {
-    text-align: center;
-}
+    .detalhes-produto h2 {
+        text-align: center;
+    }
 
-.botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
+    .botoes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
 
-div.frete {
-    flex-direction: column;
-}
+    .frete {
+        flex-direction: column;
+    }
 
+
+    .descricao-compra {
+
+        width: 100%;
+        height: auto;
+
+    }
+
+    .imagens-produto {
+        flex-direction: column;
+    }
+
+    .img-miniaturas {
+        flex-direction: row;
+    }
 }

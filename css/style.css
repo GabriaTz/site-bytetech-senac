@@ -87,7 +87,7 @@ header .nav-pesquisa {
     margin: auto;
     gap: 10px;
     height: 100px;
-    width: stretch;
+    width: 100%;
     max-width: 500px;
 }
 
@@ -162,7 +162,7 @@ div .pesquisa {
     border-radius: 10px;
     border: none;
     height: 40px;
-    width: stretch;
+    width: 100%;
 }
 
 div .pesquisa i {
@@ -574,7 +574,7 @@ p {
     }
 
     div .pesquisa {
-        width: stretch;
+        width: 100%;
         max-width: 400px;
         gap: 10px;
         margin: auto;
