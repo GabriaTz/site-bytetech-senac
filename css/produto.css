@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     display: flex;
     gap: 40px;
     padding: 40px 40px;
@@ -243,6 +243,12 @@
     align-content: center;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1400px) {
+    .vitrine {
+        flex-wrap: wrap;
+    }
 }
 
 
