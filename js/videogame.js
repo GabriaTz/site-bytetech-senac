@@ -34,16 +34,16 @@ async function buscarVideoGames() {
             let link = produtoDiv.querySelector(".produtoSelecionado");
             switch(p.id){
                 case 1:
-                    link.href = "../Produto.html"
+                    link.href = "../Produtos/Videogames/Playstation5-Pro.html"
                     break;
                 case 2: // ID 2 = XBOX
-                    link.href = "../Produto.html"
+                    link.href = "../Produtos/Videogames/XboxSeriesX.html"
                     break;
                 case 3:
-                    link.href = "../Produto.html"
+                    link.href = "../Produtos/Videogames/Switch.html"
                     break;
                 case 4:
-                    link.href = "../Produto.html"
+                    link.href = "../Produtos/Videogames/Switch-2.html"
                     break;
                 default:
                     link.href = ""
